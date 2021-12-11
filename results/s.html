@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
+    <title>Switch</title>
+    <style media="screen">
+      * {
+        font-family: 'Cairo', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+        scrollbar-width: none;
+      }
+      ::-webkit-scrollbar {
+      display: none;
+      }
+      h1 {
+        text-align: center;
+      }
+      body {
+        background: linear-gradient(45deg, #EECFBA, #ff0000);
+      }
+      .content-wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+      .content {
+        background: #161A20;
+        border-radius: 30px;
+        position: absolute;
+        width: 60%;
+        padding: 5%;
+        margin: 0 auto;
+        animation: aslide 1s;
+      }
+      .back {
+        padding: 10px;
+        background: #161A20;
+        text-decoration: none;
+        cursor: pointer;
+        position: fixed;
+        margin: 0;
+        top: 0px;
+        left: 100px;
+        z-index: 2;
+        animation: bslide 1s;
+      }
+      @keyframes aslide {
+        from {
+          opacity: 0;
+          transform: translate(0, 15px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes bslide {
+        from {
+          opacity: 0;
+          transform: translate(0, -50px);
+        }
+        50% {
+          opacity: 0;
+          transform: translate(0, -50px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+    </style>
+  </head>
+  <body>
+    <a href="../index.html" class="back"><- На главную</a>
+    <div class="content-wrap">
+      <div class="content">
+        <h1>Nintendo Switch</h1>
+        <p>Главный и основной плюс игровой приставки — это игры. Игры от большой N — это какое-то волшебство, тут не нужно беспокоиться по поводу рейтрейсинга, миллиона полигонов и 8К графики, поэтому что этого всего тут нет. Играть в игры от N очень интересно, потому что главное в их играх это геймплей, а его там предостаточно. Я помню как проходил Zelda Botw и радовался как-будто я впервые вообще увидел игры, несмотря на мой 25 летний стаж в играх. При этом игры подойдут как детям, так и взрослым.<br>К тому же Nintendo не боится экспериментировать, чего только стоит Nintendo Labo (да-да это картон за 4 тысячи рублей, который можно найти дешевле в раза 3 (привет алиэкспресс)), Ring Fit — очень крутая вещь с её помощью я похудел ровно на + 5 килограмм, Mario Cart Live с портативной машинкой. И не стоит забывать про огромную библиотеку игр от сторонних разработчиков, которые зачастую сразу же портируют игры на Switch. Для моего друга, который далек от мира портативного гейминга было удивительно, что тут есть скайрим (да, да, СЛЫШ КУПИ), ведьмак, цивилизация, дум). И я не говорю уже о таких отличных проектах как Hollow Knight или недавно вышедший Hades. Однако все это стоит в десятки раз больше, чем в стиме, так что стоит задуматься.</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
+    <title>PlayStation4</title>
+    <style media="screen">
+      * {
+        font-family: 'Cairo', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+        scrollbar-width: none;
+      }
+      ::-webkit-scrollbar {
+      display: none;
+      }
+      h1 {
+        text-align: center;
+      }
+      body {
+        background: linear-gradient(45deg, #0854ff, #5800c9);
+      }
+      .content-wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+      .content {
+        background: #161A20;
+        border-radius: 30px;
+        position: absolute;
+        width: 60%;
+        padding: 5%;
+        margin: 0 auto;
+        animation: aslide 1s;
+      }
+      .back {
+        padding: 10px;
+        background: #161A20;
+        text-decoration: none;
+        cursor: pointer;
+        position: fixed;
+        margin: 0;
+        top: 0px;
+        left: 100px;
+        z-index: 2;
+        animation: bslide 1s;
+      }
+      @keyframes aslide {
+        from {
+          opacity: 0;
+          transform: translate(0, 15px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes bslide {
+        from {
+          opacity: 0;
+          transform: translate(0, -50px);
+        }
+        50% {
+          opacity: 0;
+          transform: translate(0, -50px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+    </style>
+  </head>
+  <body>
+    <a href="../index.html" class="back"><- На главную</a>
+    <div class="content-wrap">
+      <div class="content">
+        <h1>PlayStation 4</h1>
+        <p>Для не особо требовательного геймера PS4 подойдет идеально, и вот почему:</p>
+        <h3>Эксклюзивы</h3>
+        <p>Свои эксклюзивы есть у всех платформ, но в случае с ПК это какие-то инди-поделки либо Dota и её бесчисленные клоны. Ещё стратегии в реальном времени есть на компе — их портирование на PlayStation затруднено неудобством игры на геймпаде и не слишком высокой востребованностью. Раз уж мы сказали про инд Текст взят с шикарного BroDude.ru и-разработчиков, то стоит упомянуть и то, что эксклюзивы для SONY разрабатывают гении игровой индустрии. Как минимум одного ты знаешь точно. Эксклюзивы других консолей не идут ни в какое сравнение с такими тайтлами от PlayStation 4, как The Last of Us, Uncharted, Heavy Rain, Bloodborne или God of War.</p>
+        <h3>Цена</h3>
+        <p>PlayStation 4 очевидно выигрывает у ПК по цене: сопоставимый по производительности системный блок выйдет почти в два раза дороже. Консоли от других разработчиков находятся примерно в одном ценовом сегменте с PlayStation, но исходя из отчетов продаж — SONY все же любят больше. Сформировалось обособленное игровое сообщество, которым больше нравятся их геймпады, эксклюзивы и предложения в PS+.</p>
+        <h3>Онлайн без читеров</h3>
+        <p>Поговаривают, что когда-то в онлайн-играх не было читеров, потому что все сидели в одном ночном игровом клубе, и за iddqd или mp_gravity можно было и люлей получить. Сегодня невозможно найти игру или хотя бы отдельный сервер, где не было бы мамкиных хакеров. Это если ты играешь на ПК. У PlayStation 4 таких проблем нет.</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
+    <title>Компьютер</title>
+    <style media="screen">
+      * {
+        font-family: 'Cairo', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+        scrollbar-width: none;
+      }
+      ::-webkit-scrollbar {
+      display: none;
+      }
+      h1 {
+        text-align: center;
+      }
+      body {
+        background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+      }
+      .content-wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+      .content {
+        background: #161A20;
+        border-radius: 30px;
+        position: absolute;
+        width: 60%;
+        padding: 5%;
+        margin: 0 auto;
+        animation: aslide 1s;
+      }
+      .back {
+        padding: 10px;
+        background: #161A20;
+        text-decoration: none;
+        cursor: pointer;
+        position: fixed;
+        margin: 0;
+        top: 0px;
+        left: 100px;
+        z-index: 2;
+        animation: bslide 1s;
+      }
+      @keyframes aslide {
+        from {
+          opacity: 0;
+          transform: translate(0, 15px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes bslide {
+        from {
+          opacity: 0;
+          transform: translate(0, -50px);
+        }
+        50% {
+          opacity: 0;
+          transform: translate(0, -50px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+    </style>
+  </head>
+  <body>
+    <a href="../index.html" class="back"><- На главную</a>
+    <div class="content-wrap">
+      <div class="content">
+        <h1>Персональный компьютер как игровой девайс</h1>
+        <p>Компьютер - это лучший способ играть в игры, если покупатель располагает достаточными средствами. Начнем с козырей ПК. Компьютер подкупает тем, что вы вольны собрать настоящего монстра. Конечно, самостоятельно разместить «органы» внутри корпуса может быть сложно, зато комплектующие от разных производителей, как правило, неплохо уживаются друг с другом. Также ПК способен прослужить долго. Так, самая популярная видеокарта среди пользователей Steam — это по-прежнему старушка GeForce GTX 1060. Совсем не обязательно гнаться за топовым PC, который займет полкомнаты и опустошит карман на несколько сотен тысяч рублей. Компьютер для игры в разрешении 1920x1080 при среднем качестве графики обойдется в 60–80 тысяч рублей, причем с учетом клавиатуры, мыши, подходящего монитора и наушников.<br>Но PS5 и тем более PS4 все равно дешевле. И интерфейс у них проще, технические проблемы редки, по размеру они компактнее. А еще устройство прямо из коробки готово к использованию — никакой возни со сборкой и настройкой. Подвох приставок кроется в ценах на игры и дополнительных платежах. В российском сегменте Steam действуют региональные цены на PC-игры, в то время как в PlayStation Store новинки стоят 4–6 тысяч рублей.</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Современные игровые приставки</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+  </head>
+  <body>
+  <div class="bgvid">
+    <video autoplay muted loop id="myVideo">
+      <source src="img/bg.mp4" type="video/mp4">
+    </video>
+  </div>
+
+    <header>
+        <a id="logo-ref" href="#"><img id="logo" src="img/logo.png" alt="Логотип"></a>
+        <nav>
+            <a href="#" id="open-popup">Инфо</a>
+        </nav>
+    </header>
+
+  <div class="info-popup-bg">
+    <div class="info-popup">
+      <h2>Зачем нужен этот сайт?</h2>
+      <p>Тут вы можете узнать, какая консоль вам подойдет в зависимости от ваших предпочтений. Результаты могут быть неточными.</p>
+      <br>
+      <h1>Сделано с ненавистью и болью by akd (Артем Резниченко)</h2>
+        <!-- Place this tag where you want the button to render. -->
+    <a class="github-button" href="https://github.com/ollyhearn" aria-label="Follow @ollyhearn on GitHub">Follow @ollyhearn</a>
+  <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    </div>
+  </div>
+  <section class="first-section">
+    <h2 class="question">Для чего вы хотите приобрести консоль?</h2>
+    <div class="choices">
+      <a class="choice" id="c1" href="#s2">Хардкорный гейминг</a>
+      <a class="choice" id="c2" href="#s2">Расслабиться после тяжелого дня</a>
+      <a class="choice" id="c3" href="#s2">Весело провести время с друзьями</a>
+      <a class="choice" id="c4" href="#s2">Пройти величайшие произведения игровой индустрии</a>
+    </div>
+  </section>
+  <section class="second-section" id="s2">
+    <h2 class="question">Какой жанр игр вам нравится больше остальных?</h2>
+    <div class="choices">
+      <a class="choice" id="c1" href="#s3">FPS</a>
+      <a class="choice" id="c2" href="#s3">Sandbox</a>
+      <a class="choice" id="c3" href="#s3">Adventure</a>
+      <a class="choice" id="c4" href="#s3">MMO</a>
+    </div>
+  </section>
+  <section class="third-section" id="s3">
+    <h2 class="question">Каков ваш бюджет?</h2>
+    <div class="choices">
+      <a class="choice" id="c1" href="#sa">До 20k</a>
+      <a class="choice" id="c2" href="#sa">20k-50k</a>
+      <a class="choice" id="c3" href="#sa">50k-70k</a>
+      <a class="choice" id="c4" href="#sa">70k+</a>
+    </div>
+  </section>
+  <section class="answer" id="sa">
+    <a class="choice" id="btn" href="#sr">Узнать ответ!</a>
+  </section>
+  <section class="result" id="sr">
+  <div class="result-card">
+    <div class="result-info">
+      <h2 class="result-header">Кул хацкер, бро</h2>
+      <p class="result-desc">Оу, да вы умеете нажимать на f12</p>
+      <a href="http://lurkmore.to/Кулхацкер" class="result-btn">Узнать подробнее!</a>
+    </div>
+    <img src="img/cardpics/hacker.png" alt="Грязный хакер" class="result-pic" id="pictr">
+  </div>
+  </section>
+  <script type="text/javascript" src="popup.js"></script>
+  <script type="text/javascript" src="testik.js"></script>
+  </body>
+</html>

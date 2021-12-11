@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
+    <title>Switch Lite</title>
+    <style media="screen">
+      * {
+        font-family: 'Cairo', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+        scrollbar-width: none;
+      }
+      ::-webkit-scrollbar {
+      display: none;
+      }
+      h1 {
+        text-align: center;
+      }
+      body {
+        background: linear-gradient(45deg, #ff0000, #ff7f50);
+      }
+      .content-wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+      .content {
+        background: #161A20;
+        border-radius: 30px;
+        position: absolute;
+        width: 60%;
+        padding: 5%;
+        margin: 0 auto;
+        animation: aslide 1s;
+      }
+      .back {
+        padding: 10px;
+        background: #161A20;
+        text-decoration: none;
+        cursor: pointer;
+        position: fixed;
+        margin: 0;
+        top: 0px;
+        left: 100px;
+        z-index: 2;
+        animation: bslide 1s;
+      }
+      @keyframes aslide {
+        from {
+          opacity: 0;
+          transform: translate(0, 15px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes bslide {
+        from {
+          opacity: 0;
+          transform: translate(0, -50px);
+        }
+        50% {
+          opacity: 0;
+          transform: translate(0, -50px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+    </style>
+  </head>
+  <body>
+    <a href="../index.html" class="back"><- На главную</a>
+    <div class="content-wrap">
+      <div class="content">
+        <h1>Nintendo Switch Lite</h1>
+        <p>Nintendo Switch Lite, «облегченная» версия, вышедшая в сентябре 2019 года, стала полностью портативной, без съемных джойконов и возможности подключения к телевизору. Однако справедливо ли будет назвать Switch Lite урезанной версией Nintendo Switch? Лишь отчасти.<br>Давайте пройдемся по основным различиям между двумя версиями. В первую очередь в глаза бросается разница в цене. Если оригинальная консоль стоит около 23 000 рублей, то версия Lite обойдется в среднем в 16 000 рублей. Но следует учесть, что джойконы в комплект бюджетной версии не входят, поскольку она снабжена встроенными контроллерами. Кроме того, Switch Lite не совместима с док-станцией Nintendo Switch и не поддерживает вывод на телевизор, поэтому не поставляется с док-станцией, кабелем HDMI или подставкой. Однако Lite версия позволяет играть во все то же самое, что и старшая Switch, так что если ты не планируешь играть с друзьями с joy-con, то Lite тебе подойдет. Однако не стоит забывать, что это Nintendo, жадная корпорация, которая просит за игры 5-10-летней давности по 4к рублей. Готов отдать столько за портативность?</p>
+      </div>
+    </div>
+  </body>
+</html>

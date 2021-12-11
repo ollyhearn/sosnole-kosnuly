@@ -1,0 +1,281 @@
+header {
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  padding: 1em 8em;
+  background: #161a20;
+  box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 0px 0px 30px 30px;
+  height: 10vh;
+}
+
+#myVideo, .bgvid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.bgvid {
+  background: #000;
+  opacity: 0.2;
+  z-index: -1;
+  transform: translate(0, 10em);
+}
+#logo {
+  width: 50px;
+  margin-right: 60em;
+  transition: 0.3s;
+}
+#logo:hover {
+  transform: scale(1.2);
+}
+nav {
+  justify-content: space-between;
+  /* width: 60%; */
+  width: max-content;
+  cursor: default;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1em 2em;
+  border: 1px solid transparent;
+  border-radius: 0.3em;
+  transition: 0.3s;
+
+}
+nav a:hover {
+  border: 1px solid #f05454;
+}
+
+.info-popup-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s all;
+}
+
+.info-popup-bg.active {
+  opacity: 1;
+  cursor: pointer;
+  pointer-events: all;
+  transition: 0.5s all;
+  z-index: 2;
+}
+
+.info-popup {
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 400px;
+  padding: 25px;
+  transition: 0.5s all;
+}
+
+.info-popup.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s all;
+  cursor: default;
+  z-index: 2;
+}
+
+.open-popup{
+
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-bottom: 200px;
+  justify-content: space-around;
+  color: white;
+  flex-flow: column wrap;
+
+}
+
+.second-section > .question, .third-section > .question, .answer > .choice {
+  margin-top: 10%;
+}
+
+.first-section {
+  padding-top: 20em;
+}
+
+.first-section > .question {
+  animation: slide 1s;
+}
+
+.first-section > .choices {
+  animation: wait 2s;
+}
+
+@keyframes wait {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: translate(0, 50px);
+    animation-timing-function: ease;
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translate(0, 50px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.choices {
+  display: flex;
+  justify-content: space-between;
+}
+
+.choice {
+  margin: 50px;
+  text-decoration: none;
+  padding: 20px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  transition: 0.5s all;
+  cursor: pointer;
+  background: #222831;
+  user-select: none;
+}
+
+.choice:link {
+  color: #fff;
+}
+
+.choice:visited {
+  color: #fff;
+}
+
+.choice:hover {
+  transition: 0.5s all;
+  border: 1px solid #85d8ff;
+}
+
+.second-section {
+  opacity: 0;
+  z-index: 0;
+}
+
+.second-section.shown {
+  transition: 0.1s;
+  opacity: 1;
+  z-index: 1;
+}
+
+.third-section {
+  opacity: 0;
+  z-index: 0;
+}
+
+.third-section.shown {
+  transition: 0.1s;
+  opacity: 1;
+  z-index: 1;
+}
+
+.answer {
+  color: #fff;
+  opacity: 0;
+  text-decoration: none;
+}
+.answer.shown {
+  opacity: 1;
+}
+#btn {
+  background: #85d8ff;
+}
+
+.result-card {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #222831;
+  border-radius: 30px;
+  padding: 20px;
+  height: 30em;
+  width: 40em;
+  opacity: 0;
+  transition: 0.2s;
+  /* transform: scale(0.5); */
+}
+
+.result-card.shown {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.result-info {
+  display: flex;
+  flex-flow: column;
+  width: 15em;
+  justify-content: space-around;
+
+  /* margin-top: 2em;
+  margin-bottom: 2em;
+  padding-bottom: 2em; */
+}
+
+.result-header {
+  padding-bottom: 1em;
+}
+
+.result-btn {
+  margin: 30px;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  transition: 0.5s all;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  background: #85d8ff;
+  transition: 0.2s;
+}
+
+.result-btn:hover {
+  transform: translate(0, -5px);
+  box-shadow: 0 10px 13px 5px rgba(0, 0, 0, 0.74);
+  transition: 0.2s;
+}
+
+.result-pic {
+  width: 15em;
+  height: 15em;
+  margin-top: 1.2em;
+  margin-right: -2em;
+  border-radius: 30px;
+}

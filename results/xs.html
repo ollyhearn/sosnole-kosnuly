@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
+    <title>Xbox Series S</title>
+    <style media="screen">
+      * {
+        font-family: 'Cairo', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+        scrollbar-width: none;
+      }
+      ::-webkit-scrollbar {
+      display: none;
+      }
+      h1 {
+        text-align: center;
+      }
+      body {
+        background: linear-gradient(45deg, #45F74B, #006300);
+      }
+      .content-wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+      .content {
+        background: #161A20;
+        border-radius: 30px;
+        position: absolute;
+        width: 60%;
+        padding: 5%;
+        margin: 0 auto;
+        animation: aslide 1s;
+      }
+      .back {
+        padding: 10px;
+        background: #161A20;
+        text-decoration: none;
+        cursor: pointer;
+        position: fixed;
+        margin: 0;
+        top: 0px;
+        left: 100px;
+        z-index: 2;
+        animation: bslide 1s;
+      }
+      @keyframes aslide {
+        from {
+          opacity: 0;
+          transform: translate(0, 15px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+      @keyframes bslide {
+        from {
+          opacity: 0;
+          transform: translate(0, -50px);
+        }
+        50% {
+          opacity: 0;
+          transform: translate(0, -50px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+    </style>
+  </head>
+  <body>
+    <a href="../index.html" class="back"><- На главную</a>
+    <div class="content-wrap">
+      <div class="content">
+        <h1>Xbox Series S</h1>
+        <p>На первый взгляд Xbox Series S — это очень глупая консоль. Во время гонки терафлопс, скоростей SSD, трассировки лучей и бесконечных видеосравнений мультиплатформенных игр выходит крохотная консоль, которая на бумаге в чем-то даже слабее, чем ее предшественница Xbox One X. Хотя все немного хитрее: по задумке Microsoft, Series S — полноправная консоль нового поколения, но не для 4К, а для 1080p. Поэтому у нее такой же процессор, как у Series X, такой же по скорости SSD (но в два раза меньше) и почти такой же набор функций. Но при этом меньше памяти и видеокарта ровно в 3 раза слабее — считается, что этого достаточно для меньшего разрешения.<br>Xbox Series S — это консоль для 1080p и временами для 1440p. Это консоль для тех, кто хочет играть в некст-ген, но за разумную цену. Новинки этого сезона, игры прошлого поколения по обратной совместимости — при правильно подобранном разрешении все они работают безупречно и без малейших намеков на тормоза, да еще и с новыми фишками. Вы можете запустить Assassin’s Creed Valhalla, за 10 секунд переключиться на оригинальный Assassin’s Creed 2007 года, а потом просто уйти играть в The Elder Scrolls III: Morrowind в идеальных 1080p60.</p>
+      </div>
+    </div>
+  </body>
+</html>
