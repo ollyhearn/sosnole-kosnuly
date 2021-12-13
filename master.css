@@ -11,17 +11,18 @@ header {
 
 #myVideo, .bgvid {
   position: fixed;
-  right: 0;
-  bottom: 0;
+  top: 0;
+  left: 0;
   min-width: 100%;
   min-height: 100%;
+  /* margin-top: -20em; */
 }
 
 .bgvid {
   background: #000;
   opacity: 0.2;
   z-index: -1;
-  transform: translate(0, 10em);
+  /* transform: translate(0, -30em); */
 }
 #logo {
   width: 50px;
@@ -105,7 +106,7 @@ section {
   display: flex;
   width: 100%;
   height: auto;
-  margin-bottom: 200px;
+  margin-bottom: 20px;
   justify-content: space-around;
   color: white;
   flex-flow: column wrap;
@@ -115,7 +116,7 @@ section {
 }
 
 .second-section > .question, .third-section > .question, .answer > .choice {
-  margin-top: 10%;
+  margin-top: 20%;
 }
 
 .first-section {
