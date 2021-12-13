@@ -30,7 +30,10 @@ let ch1 = false
 
 window.scrollTo(0,0)
 window.scrollTo(0,0)
-document.body.style.overflow = 'hidden'
+
+if( !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ) {
+  document.body.style.overflow = 'hidden'
+}
 
 document.addEventListener('click', (e) => {
 // first
